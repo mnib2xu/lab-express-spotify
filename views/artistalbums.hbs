@@ -1,0 +1,9 @@
+{{#each data.items}}
+    <h2>{{this.artists.0.name}}</h2>
+    <li>{{this.name}}</li>
+    <li>{{this.release_date}}</li>
+    <a href="/artist/{{this.id}}">
+    <h3>View Tracks</h3>
+    </a>
+    <br>
+{{/each}}
